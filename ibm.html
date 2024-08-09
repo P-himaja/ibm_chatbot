@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Space</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            overflow-x: hidden;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .text-section {
+            max-width: 500px;
+        }
+        .text-section h1 {
+            font-size: 2.5em;
+            color: #F267BA;
+            margin-bottom: 20px;
+        }
+        .text-section p {
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.6;
+        }
+        .text-section button {
+            background-color: #a068c394;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .image-section {
+            max-width: 1000px;
+        }
+        .image-section img {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            height: auto;
+            margin-left: 20%;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 15px;
+            font-size: 1em;
+        }
+        .navbar a:hover {
+            color: #d9a156;
+        }
+        .logo img {
+           width:50px;
+        }
+        .card {
+         background-color:rgba(233, 233, 250, 0.573);
+         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+         padding: 25px;
+        }
+        .container1 {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 25px;
+        background-color:white;
+        }
+        .card-image {
+        flex: 1;
+        background-color:rgba(233, 233, 250, 0.507);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        .card-content button {
+        background-color: #a068c394;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        }
+        .card-content h2 {
+        margin: 0;
+        color: #502b6b;
+        font-size: 24px;
+        padding-right: 15px;
+        }
+        .card-content p{
+          color: rgba(0, 0, 0, 0.589);
+        }
+        .sub-head{
+          color: #F267BA;
+        }
+        .sub-container{
+          padding: 50px;
+
+        }
+    </style>
+</head>
+<body>
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "5f4ab08b-e304-4d6d-8ad8-dd26ad48c72a", // The ID of this integration.
+          region: "us-south", // The region your integration is hosted in.
+          serviceInstanceID: "eac59241-f0e0-4f7d-81f2-412f99fb743e", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+    <header class="navbar">
+        <div class="logo"><img src="logo.png" alt="logo"></div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">New</a>
+            <a href="#">Feed</a>
+            <a href="#">Company</a>
+            <a href="#">Collection</a>
+            <a href="#">Blog</a>
+        </nav>
+        <div class="actions">
+            <a href="#">Q</a>
+            <a href="#">A</a>
+            <a href="#">O</a>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="text-section">
+            <h1>Welcome to Mira</h1>
+            <p>Creating a place where you can feel secure and free from harm or danger. Join our community and help others find peace and safety.</p>
+            <button>GET STARTED</button>
+        </div>
+        <div class="image-section">
+            <img src="Bully_image.jpg" alt="Safe Space Illustration">
+        </div>
+    </section>
+    <div class="sub-container">
+    <h1 class="sub-head">Together, We Can Stop Bullying!!</h1>
+    <div class="container1">
+        <div class="card">
+            <div class="card-content">
+                <h2>SAFE SPACE</h2>
+                <p>A place where everyone is free to be themselves, without fear of judgment or harm. Here, respect and kindness are the foundation, ensuring that everyone feels valued and protected.</p>
+                <button >READ MORE</button>
+
+            </div>
+            <div class="card-image">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.ClfjUws4o2YtWXo6LVmFGAHaH2&pid=Api&P=0&h=180" alt="Safe Space">
+            </div>
+        </div>
+            
+        <div class="card">
+            <div class="card-content">
+                <h2>BYSTANDER EFFECT</h2>
+                <p>When we witness bullying, it's easy to think someone else will step in. But when we all wait, the harm continues. Take action—be the one who makes a difference.</p>
+                <button >READ MORE</button>
+
+            </div>
+            <div class="card-image">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.GGDb6_Ze0vAGWXUOjpmRFAHaF7&pid=Api&P=0&h=180" alt="Bystander Effect">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h2>HARASSMENT</h2>
+                <p>Unwanted, aggressive behavior that threatens or humiliates others, leaving deep emotional scars. It’s never acceptable—everyone deserves to be treated with dignity and respect.</p>
+                <button >READ MORE</button>
+            </div>
+            <div class="card-image">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.VRYEnbOjVR8CiDyJr_KPGgHaFF&pid=Api&P=0&h=180" alt="Harassment">
+            </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
